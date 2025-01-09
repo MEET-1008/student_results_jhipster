@@ -1,0 +1,52 @@
+{
+  "changelogDate": "20250109042212",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "java",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "python",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "flutter",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "student_id",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "avg",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "total_marks",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "result",
+      "fieldType": "pass_faill",
+      "fieldValues": "PASS,FAIL"
+    }
+  ],
+  "name": "Results",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "results",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}
